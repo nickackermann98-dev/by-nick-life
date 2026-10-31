@@ -42,38 +42,47 @@
 
 
 /* ===================================
-   WORK PHOTOS – ZOOM OUT
+   WORK PHOTOS – OPTIMIERTER AUSSCHNITT
    =================================== */
 
 .work-card {
   position: relative;
+  height: 480px;
   overflow: hidden;
+  border-radius: 23px;
   background: #101a38;
 }
 
-/* Beide Fotos etwas herauszoomen */
+/* Fotos füllen die gesamte Kachel */
 .work-card img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center;
-  transform: scale(0.85);
+  object-fit: cover;
+  transform: none;
 }
 
 /* Foto 1 – Nick bei der Arbeit */
 .work-card:first-child img {
-  object-position: center 20%;
+  object-position: center 25%;
 }
 
-/* Foto 2 – Mikrofon & Praxis */
+/* Foto 2 – Mikrofon und Praxislogo */
 .work-card:nth-child(2) img {
-  object-position: center 65%;
+  object-position: center 70%;
 }
 
 /* Smartphones */
 @media (max-width: 760px) {
-  .work-card img {
-    transform: scale(0.95);
+  .work-card {
+    height: 430px;
+  }
+
+  .work-card:first-child img {
+    object-position: center 20%;
+  }
+
+  .work-card:nth-child(2) img {
+    object-position: center 65%;
   }
 }

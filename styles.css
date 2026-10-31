@@ -40,40 +40,40 @@
 @media(max-width:760px){.work-section{padding:42px 0 60px}.work-intro{display:block}.work-grid{grid-template-columns:1fr}.work-card{height:390px}}
 
 
+
 /* ===================================
-   WORK PHOTOS – IMAGE FRAMING
+   WORK PHOTOS – ZOOM OUT
    =================================== */
 
-/* Beide Arbeitsfotos */
 .work-card {
   position: relative;
   overflow: hidden;
+  background: #101a38;
 }
 
+/* Beide Fotos etwas herauszoomen */
 .work-card img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
+  transform: scale(0.85);
 }
 
-/* Foto 1: Nick bei der Arbeit */
+/* Foto 1 – Nick bei der Arbeit */
 .work-card:first-child img {
   object-position: center 20%;
 }
 
-/* Foto 2: Mikrofon und Praxislogo */
+/* Foto 2 – Mikrofon & Praxis */
 .work-card:nth-child(2) img {
-  object-position: center 75%;
+  object-position: center 65%;
 }
 
-/* Optimierung für Smartphones */
+/* Smartphones */
 @media (max-width: 760px) {
-  .work-card:first-child img {
-    object-position: center 15%;
-  }
-
-  .work-card:nth-child(2) img {
-    object-position: center 70%;
+  .work-card img {
+    transform: scale(0.95);
   }
 }

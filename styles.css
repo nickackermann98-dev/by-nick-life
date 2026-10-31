@@ -999,3 +999,22 @@ button {
 .label-icon svg {
   stroke: #f9faff;
 }
+
+
+/* Original-Stil der sechs Icons */
+
+.service-icon svg,
+.label-icon svg {
+  width: 27px;
+  height: 27px;
+  fill: none;
+  stroke: #6495ff;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.label-icon svg {
+  stroke: #f9faff;
+}
+

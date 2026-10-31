@@ -30,3 +30,9 @@ Externe Profil-Links wurden aus deiner Nachricht übernommen, aber nicht auf Err
 ZAHNGEFÜHL ist als Projekt in Entwicklung enthalten, ohne öffentlichen Vorschau-Link.
 
 Projektkarte: Zahnarztpraxis Dr. Lisa Ruhland; Markenfarbe #597953.
+
+Corporate Design Zahnarztpraxis Dr. Lisa Ruhland:
+Dunkelgrün #597953 | Mintgrün #D6F5CC | Orange #DA7373 |
+Hellorange #F2B6B6 | Beige #FAF2E6
+Die Farben gelten nur für die Projektvorschau der Praxis;
+das übrige Portfolio behält das bestehende Design.

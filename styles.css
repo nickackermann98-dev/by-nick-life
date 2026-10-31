@@ -117,3 +117,32 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
 .project-card .project-preview:not(.zahngefuehl-preview) .project-preview-action {
   border-bottom-color: #597953;
 }
+
+/* Zahnarztpraxis Dr. Lisa Ruhland – offizielles Corporate Design
+   Dunkelgrün #597953, Mintgrün #D6F5CC, Orange #DA7373,
+   Hellorange #F2B6B6, Beige #FAF2E6 */
+.project-card:first-child .project-preview {
+  background: #FAF2E6;
+  color: #597953;
+  border-top: 7px solid #D6F5CC;
+}
+.project-card:first-child .project-preview .project-preview-tag {
+  color: #597953;
+}
+.project-card:first-child .project-preview .project-preview-title {
+  color: #597953;
+}
+.project-card:first-child .project-preview .project-preview-title strong {
+  color: #597953;
+}
+.project-card:first-child .project-preview .project-preview-sub {
+  color: #597953;
+}
+.project-card:first-child .project-preview .project-preview-action {
+  color: #DA7373;
+  border-bottom: 2px solid #F2B6B6;
+}
+.project-card:first-child .project-preview:hover .project-preview-action {
+  color: #597953;
+  border-bottom-color: #DA7373;
+}

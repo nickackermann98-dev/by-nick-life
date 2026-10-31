@@ -86,3 +86,21 @@
     object-position: center 65%;
   }
 }
+
+/* ===================================
+   MEHR ENTDECKEN – ÜBER DER LINIE
+   =================================== */
+
+.scroll-hint {
+  position: relative;
+  z-index: 5;
+  transform: translateY(-45px);
+}
+
+/* Smartphone */
+@media (max-width: 760px) {
+  .scroll-hint {
+    transform: translateY(-25px);
+  }
+}
+

@@ -588,6 +588,30 @@ button { font: inherit; }
   .service { margin-bottom: 25px; }
   .service p { max-width: none; font-size: .95rem; }
 
+  
+/* Optimierte Bildausschnitte */
+
+/* Gym – Person weiter in den Mittelpunkt */
+.gym.has-image .card-art {
+  background-position: center 68% !important;
+}
+
+/* Reisen – Nick statt Himmel zeigen */
+.travel.has-image .card-art {
+  background-position: center 75% !important;
+}
+
+/* Konzerte – Personen stärker hervorheben */
+.music.has-image .card-art {
+  background-position: center 78% !important;
+}
+
+/* Bildkarten etwas heller */
+.life-card.has-image .card-art {
+  filter: brightness(1.12);
+}
+
+
   .curve-divider { margin-top: -25px; height: 60px; }
 
   .life-section { padding-top: 5px; padding-bottom: 65px; }

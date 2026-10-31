@@ -1,5 +1,11 @@
-# Nick Portfolio – korrigierte Fotos
+# Work & Beyond Work
 
-Alle Dateien aus diesem Ordner in das **Hauptverzeichnis** des GitHub-Repositories `nick-portfolio` hochladen. Die vier `.webp`-Dateien müssen neben `index.html`, `styles.css` und `script.js` liegen, **nicht** in `assets/`. Vorhandene Dateien mit gleichem Namen überschreiben. Cloudflare Pages aktualisiert sich anschließend automatisch.
+Eigenständige, responsive statische Website.
 
-Die drei unteren Fotos werden jetzt mit HTML-Bildelementen und `object-fit: contain` vollständig dargestellt; Amsterdam bleibt wie zuvor.
+## GitHub Pages
+1. ZIP entpacken.
+2. Alle Dateien inklusive `assets/` ins Root-Verzeichnis deines GitHub-Repositories hochladen.
+3. Unter **Settings → Pages** die Option **Deploy from a branch**, Branch **main**, Ordner **/(root)** wählen und speichern.
+4. Die Seite öffnet sich unter der von GitHub angezeigten Pages-Adresse.
+
+Hinweis: Dies ist ein neuer statischer Entwurf auf Grundlage der Screenshots, **kein Patch des bisherigen Repository-Codes**. Das zweite Gym-Motiv stammt aus dem zuvor erstellten Designentwurf. Reise- und Konzertbilder wurden aus dem bereitgestellten Screenshot ausgeschnitten.

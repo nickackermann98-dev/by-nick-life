@@ -38,3 +38,42 @@
 .work-symbol{border:1px solid var(--purple);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-size:1.5rem;flex-shrink:0}
 .work-label h3{margin:0 0 4px;font-size:1.15rem}.work-label p{margin:0;color:#c6cde0;font-size:.85rem}
 @media(max-width:760px){.work-section{padding:42px 0 60px}.work-intro{display:block}.work-grid{grid-template-columns:1fr}.work-card{height:390px}}
+
+
+/* ===================================
+   WORK PHOTOS – IMAGE FRAMING
+   =================================== */
+
+/* Beide Arbeitsfotos */
+.work-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.work-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Foto 1: Nick bei der Arbeit */
+.work-card:first-child img {
+  object-position: center 20%;
+}
+
+/* Foto 2: Mikrofon und Praxislogo */
+.work-card:nth-child(2) img {
+  object-position: center 75%;
+}
+
+/* Optimierung für Smartphones */
+@media (max-width: 760px) {
+  .work-card:first-child img {
+    object-position: center 15%;
+  }
+
+  .work-card:nth-child(2) img {
+    object-position: center 70%;
+  }
+}

@@ -160,3 +160,30 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
 .project-card:first-child .project-preview .project-preview-action { color: #111111; border-bottom-color: #111111; transition: color .2s ease, border-color .2s ease; }
 .project-card:first-child .project-preview:hover .project-preview-action,
 .project-card:first-child .project-preview:focus-visible .project-preview-action { color: #DA7373; border-bottom-color: #DA7373; }
+
+/* Ruhland: Beschreibung unter der Design-Kachel mittig, ohne zweiten Link */
+.ruhland-caption{position:relative;justify-content:center;text-align:center;}
+.ruhland-caption > div{width:100%;}
+.ruhland-caption .number{position:absolute;left:23px;top:24px;}
+@media(max-width:760px){.ruhland-caption .number{left:18px;top:19px;}}
+
+/* Behind the Scenes: Handy-Foto füllt die gesamte Bildkachel – auch mobil. */
+.gallery-card:nth-child(3) .gallery-image {
+  aspect-ratio: 4 / 3;
+  height: auto;
+  overflow: hidden;
+}
+.gallery-card:nth-child(3) .gallery-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+/* Hero: Leistungsbegriffe direkt unter "That's Me." nebeneinander */
+.hero-skill-list{display:flex;flex-wrap:wrap;align-items:center;column-gap:15px;row-gap:5px}
+.hero-skill-list>span{white-space:nowrap}
+.hero-sub-tagline{display:block;margin-top:6px}
+@media(max-width:760px){.hero-skill-list{column-gap:10px;row-gap:4px;font-size:clamp(.76rem,3vw,1rem)}}

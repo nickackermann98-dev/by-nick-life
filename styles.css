@@ -53,3 +53,67 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
 .zahngefuehl-preview .project-preview-tag{color:#c5b3ff}
 .zahngefuehl-preview .project-preview-title strong{color:#b7a5ff}
 .zahngefuehl-preview .project-preview-sub{color:#d3d7f3}
+
+/* Bildkacheln: Gym und Amsterdam gleich geformt, komplett gefüllt */
+.hero-visual {
+  border-radius: 18px;
+  aspect-ratio: 4 / 5;
+  height: auto;
+  min-height: 0;
+}
+.hero-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+  background: transparent;
+}
+.life-card:first-child .life-photo {
+  aspect-ratio: 4 / 5;
+  height: auto;
+  overflow: hidden;
+}
+.life-card:first-child .life-photo img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  /* Motiv etwas nach oben schieben: oberer Bildrand wird beschnitten. */
+  object-position: center 78%;
+}
+@media (max-width: 760px) {
+  .hero-visual {
+    aspect-ratio: 4 / 5;
+    border-radius: 18px;
+  }
+  .hero-visual img {
+    object-fit: cover;
+    object-position: center 48%;
+  }
+  .life-card:first-child .life-photo {
+    aspect-ratio: 4 / 5;
+  }
+  .life-card:first-child .life-photo img {
+    height: 100%;
+    max-height: none;
+    object-fit: cover;
+    object-position: center 78%;
+  }
+}
+
+/* Markenfarbe der Zahnarztpraxis Dr. Lisa Ruhland */
+.project-card .project-preview:not(.zahngefuehl-preview) {
+  background: linear-gradient(145deg, #f6f8f4, #e1e9de);
+  color: #30452d;
+}
+.project-card .project-preview:not(.zahngefuehl-preview) .project-preview-title strong,
+.project-card .project-preview:not(.zahngefuehl-preview) .project-preview-tag,
+.project-card .project-preview:not(.zahngefuehl-preview) .project-preview-action {
+  color: #597953;
+}
+.project-card .project-preview:not(.zahngefuehl-preview) .project-preview-sub {
+  color: #597953;
+}
+.project-card .project-preview:not(.zahngefuehl-preview) .project-preview-action {
+  border-bottom-color: #597953;
+}

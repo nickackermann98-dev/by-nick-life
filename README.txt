@@ -28,3 +28,5 @@ Für DE/EN-Übersetzung neue data-i18n-Schlüssel in script.js ergänzen.
 Externe Profil-Links wurden aus deiner Nachricht übernommen, aber nicht auf Erreichbarkeit bestätigt.
 
 ZAHNGEFÜHL ist als Projekt in Entwicklung enthalten, ohne öffentlichen Vorschau-Link.
+
+Projektkarte: Zahnarztpraxis Dr. Lisa Ruhland; Markenfarbe #597953.

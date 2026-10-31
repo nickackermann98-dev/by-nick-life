@@ -1,11 +1,9 @@
-# Work & Beyond Work
+# Nick Ackermann – Website mit Work-Fotos
 
-Eigenständige, responsive statische Website.
+Die bestehende Website wurde um einen **Work / Behind the Scenes**-Bereich mit zwei Fotos ergänzt. DE/EN-Umschaltung bleibt erhalten.
 
-## GitHub Pages
-1. ZIP entpacken.
-2. Alle Dateien inklusive `assets/` ins Root-Verzeichnis deines GitHub-Repositories hochladen.
-3. Unter **Settings → Pages** die Option **Deploy from a branch**, Branch **main**, Ordner **/(root)** wählen und speichern.
-4. Die Seite öffnet sich unter der von GitHub angezeigten Pages-Adresse.
+## GitHub / Cloudflare Pages
 
-Hinweis: Dies ist ein neuer statischer Entwurf auf Grundlage der Screenshots, **kein Patch des bisherigen Repository-Codes**. Das zweite Gym-Motiv stammt aus dem zuvor erstellten Designentwurf. Reise- und Konzertbilder wurden aus dem bereitgestellten Screenshot ausgeschnitten.
+Alle Dateien und den Ordner `assets` in das **Hauptverzeichnis** des Repositories hochladen. Vorhandene Dateien ersetzen. Cloudflare Pages: Framework None, kein Build Command, Output `/`.
+
+Die vier WebP-Dateien liegen im Hauptverzeichnis; die beiden neuen Work-Fotos unter `assets/`.

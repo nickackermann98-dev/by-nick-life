@@ -973,3 +973,29 @@ button {
     transition: none !important;
   }
 }
+
+/* ORIGINAL-ICON-STIL WIEDERHERSTELLEN */
+
+.service-icon svg,
+.label-icon svg {
+  width: 27px;
+  height: 27px;
+  fill: none;
+  stroke: #6495ff;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.service-icon,
+.label-icon {
+  border: 1.5px solid #8865ff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.label-icon svg {
+  stroke: #f9faff;
+}

@@ -87,20 +87,18 @@
   }
 }
 
-/* ===================================
-   MEHR ENTDECKEN – ÜBER DER LINIE
-   =================================== */
 
+/* Mehr entdecken – knapp über der Linie */
 .scroll-hint {
   position: relative;
   z-index: 5;
-  transform: translateY(-45px);
+  transform: translateY(-20px);
 }
 
 /* Smartphone */
 @media (max-width: 760px) {
   .scroll-hint {
-    transform: translateY(-25px);
+    transform: translateY(-10px);
   }
 }
 

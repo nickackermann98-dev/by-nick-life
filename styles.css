@@ -160,38 +160,3 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
 .project-card:first-child .project-preview .project-preview-action { color: #111111; border-bottom-color: #111111; transition: color .2s ease, border-color .2s ease; }
 .project-card:first-child .project-preview:hover .project-preview-action,
 .project-card:first-child .project-preview:focus-visible .project-preview-action { color: #DA7373; border-bottom-color: #DA7373; }
-
-/* Ruhland: Beschreibung unter der Design-Kachel mittig, ohne zweiten Link */
-.ruhland-caption{position:relative;justify-content:center;text-align:center;}
-.ruhland-caption > div{width:100%;}
-.ruhland-caption .number{position:absolute;left:23px;top:24px;}
-@media(max-width:760px){.ruhland-caption .number{left:18px;top:19px;}}
-
-/* Behind the Scenes: Handy-Foto füllt die gesamte Bildkachel – auch mobil. */
-.gallery-card:nth-child(3) .gallery-image {
-  aspect-ratio: 4 / 3;
-  height: auto;
-  overflow: hidden;
-}
-.gallery-card:nth-child(3) .gallery-image img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-height: none;
-  object-fit: cover;
-  object-position: center 42%;
-}
-
-/* What I Do: drei Leistungen nebeneinander, mit kleinem Zwischenraum */
-.hero{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);min-height:0;align-items:center;column-gap:44px;row-gap:32px}
-.services-panel{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;padding:0 0 30px}
-.services-panel .panel-heading{grid-column:1/-1;margin-bottom:3px}
-.services-panel .service{min-width:0;display:flex;align-items:flex-start;gap:12px;padding:17px 14px;border:1px solid var(--line);border-radius:14px;background:#0c1b3c}
-@media(max-width:1050px){.hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.services-panel{gap:10px}.services-panel .service{padding:14px 11px;gap:9px}}
-@media(max-width:760px){.hero{grid-template-columns:1fr}.services-panel{grid-column:1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;padding:0}.services-panel .panel-heading{grid-column:1/-1}.services-panel .service{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:12px 6px;border:1px solid var(--line);border-radius:12px}.services-panel .service-icon{width:38px;height:38px}.services-panel .service-icon svg{width:21px;height:21px}.services-panel .service h2{font-size:clamp(.7rem,2.7vw,.95rem);line-height:1.25;overflow-wrap:anywhere}.services-panel .service p{font-size:clamp(.64rem,2.35vw,.8rem);line-height:1.4}}
-
-/* Nur die drei Begriffe direkt unter "That's Me." nebeneinander */
-.hero-skill-list{display:flex;flex-wrap:wrap;column-gap:14px;row-gap:4px;align-items:baseline}
-.hero-skill-list>span{white-space:nowrap}
-.hero-sub-tagline{display:block;margin-top:5px}
-@media(max-width:760px){.hero-skill-list{column-gap:10px}}

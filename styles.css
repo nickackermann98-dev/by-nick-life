@@ -146,3 +146,17 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
   color: #597953;
   border-bottom-color: #DA7373;
 }
+
+/* Zahnarztpraxis: Titel und Leistungsangaben in Schwarz */
+.project-card:first-child .project-preview .project-preview-title,
+.project-card:first-child .project-preview .project-preview-title strong,
+.project-card:first-child .project-preview .project-preview-sub {
+  color: #111111;
+}
+
+/* Ruhland: Praxisname korallfarben, übriger Text schwarz.
+   Live-Link zunächst schwarz, bei Hover/Fokus korallfarben. */
+.project-card:first-child .project-preview .project-preview-title strong { color: #DA7373; }
+.project-card:first-child .project-preview .project-preview-action { color: #111111; border-bottom-color: #111111; transition: color .2s ease, border-color .2s ease; }
+.project-card:first-child .project-preview:hover .project-preview-action,
+.project-card:first-child .project-preview:focus-visible .project-preview-action { color: #DA7373; border-bottom-color: #DA7373; }

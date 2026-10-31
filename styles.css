@@ -198,3 +198,6 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
 }
 .ruhland-caption{align-items:flex-start}
 .ruhland-caption>div{min-width:0}
+
+/* Ruhland: beige Vorschau ohne mintgrünen oberen Streifen */
+.project-card:first-child .project-preview{border-top:0;background:#FAF2E6}

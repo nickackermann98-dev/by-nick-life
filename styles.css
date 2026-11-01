@@ -320,3 +320,7 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
 
 /* Nur Desktop: Podcast-Bildausschnitt weiter nach unten */
 @media (min-width: 761px) { .gallery-card:nth-child(4) .gallery-image img { object-position: center 100%; } }
+
+/* Neues Reise-Selfie: Gesicht sichtbar und Strand im Bild */
+.life-card:nth-child(2) .life-photo img{object-fit:cover;object-position:center 66%}
+@media(max-width:760px){.life-card:nth-child(2) .life-photo img{object-fit:cover;object-position:center 66%}}

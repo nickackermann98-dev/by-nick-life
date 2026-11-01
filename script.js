@@ -4,7 +4,7 @@
   const translations = {
     de: {
       skip:"Zum Inhalt springen",whatIDo:"What I Do",behind:"Behind the Scenes",beyond:"Beyond Work",
-      eyebrow:"Kreativ. Neugierig. Echt.",heroSub:`<span class="hero-skill-list"><span>Webdesign</span><span>E-Learning</span><span>Media Production</span></span><span class="hero-sub-tagline">&amp; a life in between.</span>`,
+      eyebrow:"Kreativ. Neugierig. Echt.",heroSub:`<span class="hero-skill-list"><span>Webdesign</span><span>E-Learning</span><span>Media Production</span></span><span class="hero-sub-tagline">&amp; ein Leben dazwischen.</span>`,
       heroItalic:"Same Person.<br>Different Passions.",seeWork:"Meine Arbeit entdecken",
       webDescription:"Moderne Websites & digitale Erlebnisse.",learningDescription:"Interaktive Lerninhalte & digitale Trainings.",
       mediaDescription:"Kreative Inhalte für Social Media & Branding.",aboutLabel:"ÜBER MICH",

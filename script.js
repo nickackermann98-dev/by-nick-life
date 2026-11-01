@@ -4,10 +4,10 @@
   const translations = {
     de: {
       skip:"Zum Inhalt springen",whatIDo:"What I Do",behind:"Behind the Scenes",beyond:"Beyond Work",
-      eyebrow:"Kreativ. Neugierig. Echt.",heroSub:`<span class="hero-skill-list"><span>Webdesign</span><span>E-Learning</span><span>Media Production</span></span><span class="hero-sub-tagline">&amp; ein Leben dazwischen.</span>`,
+      eyebrow:"Kreativ. Neugierig. Echt.",heroSub:`<span class="hero-skill-list"><span>Webdesign</span><span>E-Learning</span><span>Medienproduktion</span></span><span class="hero-sub-tagline">&amp; ein Leben dazwischen.</span>`,
       heroItalic:"Same Person.<br>Different Passions.",seeWork:"Meine Arbeit entdecken",
       webDescription:"Moderne Websites & digitale Erlebnisse.",learningDescription:"Interaktive Lerninhalte & digitale Trainings.",
-      mediaDescription:"Kreative Inhalte für Social Media & Branding.",aboutLabel:"ÜBER MICH",
+      mediaTitle:"Medienproduktion",mediaDescription:"Kreative Inhalte für Social Media & Branding.",aboutLabel:"ÜBER MICH",
       aboutTitle:"Nicht nur ein Job.<br><span>Viele Leidenschaften.</span>",
       aboutBody:"Ich bin Nick – kreativ, neugierig und offen für neue Ideen. Hier zeige ich, woran ich arbeite und was mich antreibt.",
       discoverLife:"Mehr über mich",contactText:"Kreative Projekte. Neue Ideen.<br>Spannende Menschen.<br>Ich freue mich auf den Austausch!",
@@ -27,7 +27,7 @@
       eyebrow:"Creative. Curious. Authentic.",heroSub:`<span class="hero-skill-list"><span>Web Design</span><span>E-Learning</span><span>Media Production</span></span><span class="hero-sub-tagline">&amp; a life in between.</span>`,
       heroItalic:"Same Person.<br>Different Passions.",seeWork:"Explore my work",
       webDescription:"Modern websites & digital experiences.",learningDescription:"Interactive learning content & digital training.",
-      mediaDescription:"Creative content for social media & branding.",aboutLabel:"ABOUT ME",
+      mediaTitle:"Media Production",mediaDescription:"Creative content for social media & branding.",aboutLabel:"ABOUT ME",
       aboutTitle:"More than a job.<br><span>Many passions.</span>",
       aboutBody:"I'm Nick – creative, curious, and always open to new ideas. Here's a glimpse of what I work on and what drives me.",
       discoverLife:"Get to know me",contactText:"Creative projects. New ideas.<br>Interesting people.<br>I'd love to connect!",

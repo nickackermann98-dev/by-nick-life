@@ -338,3 +338,40 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
 .case-story p:not(.eyebrow){max-width:850px;line-height:1.75;color:#e3def5}
 .case-story .case-story-note{font-size:.9rem;color:#c2b5ee!important}
 @media(max-width:760px){.full-service-section{padding-block:60px}.full-service-layout{grid-template-columns:1fr}.zg-showcase-image,.zg-podcast-pair{height:auto;min-height:280px}.zg-showcase-image img{height:auto}.zg-podcast-pair img{height:auto;object-fit:contain}.case-story{margin-block:24px 55px}}
+
+/* Referenzmotive: Bildflächen vollständig ausfüllen, ohne seitliche Balken. */
+.zg-showcase-card .zg-showcase-image,
+.zg-showcase-card .zg-podcast-pair {
+  height: auto;
+  aspect-ratio: 4 / 5;
+  min-height: 0;
+  overflow: hidden;
+  background: #19183e;
+}
+.zg-showcase-card .zg-showcase-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.zg-showcase-card .zg-podcast-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px;
+  padding: 0;
+}
+.zg-showcase-card .zg-podcast-pair img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 760px) {
+  .zg-showcase-card .zg-showcase-image,
+  .zg-showcase-card .zg-podcast-pair { height: auto; min-height: 0; aspect-ratio: 4 / 5; }
+  .zg-showcase-card .zg-showcase-image img,
+  .zg-showcase-card .zg-podcast-pair img { height: 100%; }
+}

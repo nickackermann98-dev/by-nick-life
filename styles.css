@@ -428,3 +428,16 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
   .gallery-masonry { grid-template-columns:1fr; gap:24px; }
   .gallery-masonry-column { gap:24px; }
 }
+
+/* Mobile: Karten 03–07 in richtiger numerischer Reihenfolge, ohne Leerflächen.
+   Desktop behält die unabhängigen, kompakten Spalten 03/05/07 und 04/06. */
+@media (max-width:760px) {
+  .gallery-masonry { display:flex; flex-direction:column; gap:24px; }
+  .gallery-masonry-column { display:contents; }
+  .gallery-masonry .gallery-card { width:100%; align-self:stretch; height:auto; }
+  .gallery-masonry .gallery-card:has(img[src="./zahngefuehl-herz.jpg"]) { order:3; }
+  .gallery-masonry .gallery-card:has(img[src="./zahngefuehl-projektstart.jpg"]) { order:4; }
+  .gallery-masonry .gallery-card:has(img[src="./zahngefuehl-anamnese.jpg"]) { order:5; }
+  .gallery-masonry .gallery-card:has(img[src="./praxis-filmdreh-neu.jpg"]) { order:6; }
+  .gallery-masonry .gallery-card:has(img[src="./praxis-podcast-mikrofon.jpg"]) { order:7; }
+}

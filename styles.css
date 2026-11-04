@@ -418,3 +418,13 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
 }
 .gallery-card:has(img[src="./praxis-filmdreh-neu.jpg"]) .gallery-caption h2,
 .gallery-card:has(img[src="./praxis-podcast-mikrofon.jpg"]) .gallery-caption h2 {margin-bottom:3px}
+
+/* Referenzkacheln: unabhängige Spalten statt gleich hoher Grid-Zeilen.
+   Jede Kachel endet unmittelbar nach ihrer Bildunterschrift. */
+.gallery-masonry { grid-column:1 / -1; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px; align-items:start; }
+.gallery-masonry-column { display:flex; flex-direction:column; gap:30px; min-width:0; }
+.gallery-masonry-column > .gallery-card { flex:0 0 auto; align-self:stretch; height:auto; }
+@media (max-width:760px) {
+  .gallery-masonry { grid-template-columns:1fr; gap:24px; }
+  .gallery-masonry-column { gap:24px; }
+}

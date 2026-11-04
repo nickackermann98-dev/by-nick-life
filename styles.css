@@ -445,3 +445,10 @@ h1,h2,h3,p{margin-top:0}.hero h1,.page-hero h1{font-size:clamp(3.6rem,5.5vw,6.8r
 /* Arbeitsweise: Link auf Mobilgeräten erst unter allen vier Kacheln. */
 .full-service-link-mobile{display:none}
 @media(max-width:760px){.full-service-link-desktop{display:none}.full-service-link-mobile{display:block;margin-top:24px}.full-service-link-mobile .text-link{display:inline-flex}}
+
+/* Desktop: Podcastaufnahme rechts unter Behind the Scenes; beide Spalten
+   schließen unten auf derselben Linie ab, ohne Karten künstlich zu strecken. */
+@media (min-width:761px) {
+  .gallery-masonry { align-items:stretch; }
+  .gallery-masonry-column:first-child { justify-content:space-between; }
+}

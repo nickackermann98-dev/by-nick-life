@@ -116,6 +116,15 @@ body[data-page="work"] .zg-media-grid .zg-detail-card:first-child>video {
  background:#101b38 url('./loewi-video-vorschau.jpg') center/cover no-repeat!important;
 }
 @media(max-width:700px){body[data-page="work"] .zg-media-grid .zg-detail-card:first-child>video{min-height:0!important;}}
+
+/* Zahn-Schaubild: quadratisches Originalformat ohne seitliche Balken oder Beschnitt. */
+body[data-page="work"] .zg-media-grid .zg-detail-card:nth-child(2)>img {
+ display:block!important; box-sizing:border-box!important;
+ width:100%!important; height:auto!important; aspect-ratio:1 / 1!important;
+ max-height:none!important; padding:0!important; margin:0!important;
+ object-fit:contain!important; object-position:center!important;
+ border-radius:0!important;
+}
 </style></head><body data-page="work" id="top"><a class="skip-link" href="#main">Zum Inhalt springen</a><header class="site-header container">
 <a class="brand" href="./index.html">by_nick.life<span class="brand-line"></span></a>
 <nav aria-label="Hauptnavigation" class="nav" id="primary-nav"><a data-i18n="whatIDo" href="./index.html">What I Do</a>

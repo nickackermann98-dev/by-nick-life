@@ -82,6 +82,15 @@ body[data-page="work"] .zg-media-grid .zg-detail-card>video {
   background:#101b38!important;
 }
 body[data-page="work"] .zg-media-grid .zg-detail-card>video{cursor:pointer;}
+
+/* Konzeption: Portraitmotiv ohne Innenabstand in voller Kachelbreite. */
+body[data-page="work"] .zg-detail-section:nth-of-type(4) .zg-detail-cards .zg-detail-card>img {
+ display:block!important;box-sizing:border-box!important;width:100%!important;
+ height:auto!important;max-height:none!important;aspect-ratio:auto!important;
+ object-fit:contain!important;object-position:center!important;
+ padding:0!important;margin:0!important;background:transparent!important;
+ border-radius:0!important;
+}
 </style><style>
 /* Precise final corrections: one divider per section, no duplicate lines */
 body[data-page="work"] .zg-detail-section{border:0!important;border-top:0!important;border-bottom:0!important;box-shadow:none!important;}
@@ -125,6 +134,9 @@ body[data-page="work"] .zg-media-grid .zg-detail-card:nth-child(2)>img {
  object-fit:contain!important; object-position:center!important;
  border-radius:0!important;
 }
+/* Weniger Abstand zwischen Einleitung und den beiden oberen Links */
+body[data-page="work"] .zg-detail-hero .zg-detail-actions{margin-top:12px!important;margin-bottom:20px!important;}
+@media(max-width:700px){body[data-page="work"] .zg-detail-hero .zg-detail-actions{margin-top:10px!important;margin-bottom:14px!important;}}
 </style></head><body data-page="work" id="top"><a class="skip-link" href="#main">Zum Inhalt springen</a><header class="site-header container">
 <a class="brand" href="./index.html">by_nick.life<span class="brand-line"></span></a>
 <nav aria-label="Hauptnavigation" class="nav" id="primary-nav"><a data-i18n="whatIDo" href="./index.html">What I Do</a>

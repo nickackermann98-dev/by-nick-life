@@ -100,7 +100,17 @@ body[data-page="work"] .zg-detail-section .section-topline{margin-bottom:28px!im
 body[data-page="work"] .zg-extra-episode{border-left:3px solid #ad7cff;padding-left:18px;margin-top:26px;}
 body[data-page="work"] .zg-extra-label{display:block;color:#c49bff;font-size:.78rem;font-weight:700;letter-spacing:.12em;margin-bottom:12px;}
 body[data-page="work"] .zg-extra-subtitle{color:#d3b7ff;font-weight:600;}
-</style></head><body data-page="work" id="top"><a class="skip-link" href="#main">Zum Inhalt springen</a><header class="site-header container">
+</style>
+<style>
+/* Final targeted fix: override the old nth-of-type(4) image padding/contain rules. */
+body[data-page="work"] .zg-konzept-section .zg-detail-cards .zg-detail-card > img {
+ display:block!important;box-sizing:border-box!important;width:100%!important;max-width:none!important;
+ height:auto!important;aspect-ratio:16 / 10!important;object-fit:cover!important;
+ object-position:center center!important;padding:0!important;margin:0!important;
+ background:transparent!important;border-radius:0!important;
+}
+</style>
+</head><body data-page="work" id="top"><a class="skip-link" href="#main">Zum Inhalt springen</a><header class="site-header container">
 <a class="brand" href="./index.html">by_nick.life<span class="brand-line"></span></a>
 <nav aria-label="Hauptnavigation" class="nav" id="primary-nav"><a data-i18n="whatIDo" href="./index.html">What I Do</a>
 <a aria-current="page" data-i18n="behind" href="./work.html">Behind the Scenes</a>

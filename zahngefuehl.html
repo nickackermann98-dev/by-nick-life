@@ -224,7 +224,29 @@ body[data-page="work"] .zg-konzept-section .zg-konzept-duo .zg-detail-card > img
     grid-template-columns:minmax(0,1fr)!important;
   }
 }
-</style></head><body data-page="work" id="top"><a class="skip-link" href="#main">Zum Inhalt springen</a><header class="site-header container">
+</style><style>
+/* Final project-card fix: override earlier single-column and cropped-image rules. */
+body[data-page="work"] section.zg-konzept-section .zg-detail-cards.zg-konzept-duo {
+ display:grid!important; grid-template-columns:repeat(2,minmax(0,1fr))!important;
+ width:100%!important; max-width:none!important; margin-left:0!important; margin-right:0!important;
+ column-gap:24px!important; row-gap:24px!important; align-items:stretch!important;
+}
+body[data-page="work"] section.zg-konzept-section .zg-detail-cards.zg-konzept-duo > .zg-detail-card {
+ min-width:0!important; width:auto!important; max-width:none!important; margin:0!important;
+}
+body[data-page="work"] section.zg-konzept-section .zg-detail-cards.zg-konzept-duo > .zg-detail-card > img {
+ display:block!important; box-sizing:border-box!important; width:100%!important;
+ height:auto!important; aspect-ratio:4/5!important; max-height:none!important;
+ object-fit:cover!important; object-position:center top!important;
+ padding:0!important; margin:0!important; background:transparent!important;
+}
+@media(max-width:599px) {
+ body[data-page="work"] section.zg-konzept-section .zg-detail-cards.zg-konzept-duo {
+  grid-template-columns:minmax(0,1fr)!important;
+ }
+}
+</style>
+</head><body data-page="work" id="top"><a class="skip-link" href="#main">Zum Inhalt springen</a><header class="site-header container">
 <a class="brand" href="./index.html">by_nick.life<span class="brand-line"></span></a>
 <nav aria-label="Hauptnavigation" class="nav" id="primary-nav"><a data-i18n="whatIDo" href="./index.html">What I Do</a>
 <a aria-current="page" data-i18n="behind" href="./work.html">Behind the Scenes</a>

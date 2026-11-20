@@ -203,6 +203,27 @@ body[data-page="work"] .zg-konzept-section .zg-konzept-duo .zg-detail-card-body{
 body[data-page="work"] .zg-instagram-link{display:inline-block;margin-top:18px;color:#c7b5ff;text-decoration:none;font-weight:650;}
 body[data-page="work"] .zg-instagram-link:hover{text-decoration:underline;}
 @media(max-width:700px){body[data-page="work"] .zg-konzept-section .zg-konzept-duo{grid-template-columns:minmax(0,1fr)!important;gap:26px!important;margin-top:30px!important;} }
+</style><style>
+/* Projektkacheln: Desktop konsequent zweispaltig; Bildausschnitt nach oben ausrichten. */
+body[data-page="work"] .zg-konzept-section .zg-konzept-duo {
+  display:grid!important;
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:28px!important;
+  width:100%!important;
+  max-width:none!important;
+}
+body[data-page="work"] .zg-konzept-section .zg-konzept-duo .zg-detail-card > img {
+  width:100%!important;
+  aspect-ratio:4 / 5!important;
+  height:auto!important;
+  object-fit:cover!important;
+  object-position:center top!important;
+}
+@media (max-width:700px) {
+  body[data-page="work"] .zg-konzept-section .zg-konzept-duo {
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+}
 </style></head><body data-page="work" id="top"><a class="skip-link" href="#main">Zum Inhalt springen</a><header class="site-header container">
 <a class="brand" href="./index.html">by_nick.life<span class="brand-line"></span></a>
 <nav aria-label="Hauptnavigation" class="nav" id="primary-nav"><a data-i18n="whatIDo" href="./index.html">What I Do</a>

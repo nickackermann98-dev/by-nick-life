@@ -142,6 +142,22 @@ body[data-page="work"] .zg-spotify-announcement p{margin:0 0 20px;line-height:1.
 body[data-page="work"] .zg-spotify-announcement .zg-cta{display:inline-flex;align-items:center;min-height:44px}
 @media(max-width:700px){body[data-page="work"] .zg-spotify-announcement{padding:22px 20px;margin-top:42px}}
 </style>
+<style>
+/* Square animated dental diagram: fill card edge to edge without cropping. */
+body[data-page="work"] .zg-media-grid .zg-detail-card:nth-child(2) > img[src*="zahn-schaubild-animation"] {
+ display:block!important;
+ width:100%!important;
+ max-width:none!important;
+ height:auto!important;
+ aspect-ratio:1 / 1!important;
+ object-fit:fill!important;
+ padding:0!important;
+ margin:0!important;
+ border-radius:0!important;
+ background:transparent!important;
+ flex:0 0 auto!important;
+}
+</style>
 </head><body data-page="work" id="top"><a class="skip-link" href="#main">Zum Inhalt springen</a><header class="site-header container">
 <a class="brand" href="./index.html">by_nick.life<span class="brand-line"></span></a>
 <nav aria-label="Hauptnavigation" class="nav" id="primary-nav"><a data-i18n="whatIDo" href="./index.html">What I Do</a>
